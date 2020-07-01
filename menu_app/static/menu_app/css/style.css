@@ -1,59 +1,27 @@
-*{
-	padding: 0;
-  	margin: 0;
-  	outline: 1px solid red;
-}
+* {
+  outline: 1px solid red; }
+
+html {
+  font-size: 13px; }
 
 body {
-	background: #f2f6e9 !important;
-}
+  background-color: #F2F6E9 !important;
+  color: #333;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300; }
+
+.btn {
+  padding: 0.5rem 2rem;
+  font-weight: bold; }
 
 .introBackgroundStyles {
-	background: linear-gradient(
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6)
-    ), url('/static/menu_app/images/background_image.jpg');
-	background-size: cover;
-	background-position: center;
-    position: relative;
-    /* height: 50vh; */
-    border-radius: 0px;
-    color: white;
-} 
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("/static/menu_app/images/background_image.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/static/menu_app/images/background_image.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  /* height: 50vh; */
+  border-radius: 0px;
+  color: white; }
 
-.introTitleStyles{
-	/* position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
-    color: white;
-    /* text-align: center; */
-}
-
-/* .description {
-	left: 50%;
-	position: absolute;
-	top: 45%;
-	transform: translate(-50%, -55%);
-	text-align: center;
-}
-	.description h1 {
-		color: #6ab446;
-	}
-	.description p {
-		color: #fff;
-		font-size: 1.3rem;
-		line-height: 1.5;
-	}
-
-	.description button {
-		border:1px solid #6ab446;
-		background:#6ab446;
-		border-radius: 0;
-		color:#fff;
-	}
-	.description button:hover {
-		border:1px solid #fff;
-		background:#fff;
-		color:#000;
-	} */
+/*# sourceMappingURL=style.css.map */

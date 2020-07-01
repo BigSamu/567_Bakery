@@ -1,0 +1,98 @@
+
+//---------------------------------------
+// 0. AUXILIAR OUTLINES & BORDERS
+//---------------------------------------
+
+*{
+    outline: 1px solid red,
+}
+
+// .row > * {
+//   border: 1px solid rgb(231, 24, 24);
+// }
+
+//---------------------------------------
+// 1. COLOR PATTERN
+//---------------------------------------
+
+$primary: #F0BC66;
+$secondary: #B07C59;
+$light: #F2F6E9;
+$dark: #343A3F;
+$text: #333;
+
+//---------------------------------------
+// 2. SITE TYPOGRAPHY
+//---------------------------------------
+
+html {
+  font-size: 13px;
+}
+
+body {
+  background-color: $light !important;
+  color: $text;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+//---------------------------------------
+// 3. GENERAL STYLES FOR BUTTONS
+//---------------------------------------
+
+.btn {
+  padding: 0.5rem 2rem;
+  font-weight: bold;
+}
+
+//---------------------------------------
+// 4. STYLES FOR PRIMARY COLOR
+//---------------------------------------
+
+//Complete!!
+
+//---------------------------------------
+// 5. STYLES FOR SECONDARY COLOR
+//---------------------------------------
+
+//Complete!!
+
+//---------------------------------------
+// 6. STYLES FOR DARK COLOR
+//---------------------------------------
+
+//Complete!!
+
+//---------------------------------------
+// 7. STYLES FOR NAVAR
+//---------------------------------------
+
+//Complete!!
+
+//---------------------------------------
+// 8. STYLES FOR MAIN
+//---------------------------------------
+
+// Styles for Header
+.introBackgroundStyles {
+	background: linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ), url('/static/menu_app/images/background_image.jpg');
+	background-size: cover;
+	background-position: center;
+    position: relative;
+    /* height: 50vh; */
+    border-radius: 0px;
+    color: white;
+} 
+
+//---------------------------------------
+// 8. STYLES FOR FOOTER
+//---------------------------------------
+
+//Complete!!
+
+//---------------------------------------
+// X. CUSTOMIZED MEDIA QUERIES
+//---------------------------------------
