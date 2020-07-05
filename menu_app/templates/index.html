@@ -16,14 +16,10 @@
     <!-- CSS Bootstrap 4 (Uploaded locally in folder project)-->
     <link type="text/css" rel="stylesheet" href="{% static 'menu_app/libs/bootstrap/css/bootstrap.css' %}">
     <!-- CSS Google Fonts (Uploaded by CDN with weblink) -->
-    <link type="text/css" rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap">
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pangolin:300,400,700&display=swap">
     <!-- CSS Font Awesome (Uploaded locally in folder project) -->
     <link type="text/css" rel="stylesheet" href="{% static 'menu_app/libs/fontawesome/css/all.min.css' %}">
-    <!-- CSS MMenu (Uploaded locally in folder project) -->
-    <link type="text/css" rel="stylesheet" href="{% static 'menu_app/libs/mmenu/dist/mmenu.css' %}">
-    <!-- CSS Mburger (Uploaded locally in folder project) -->
-    <link type="text/css" rel="stylesheet" href="{% static 'menu_app/libs/mburger/dist/mburger.css' %}">
+    
     <!-- CSS Swiper (Uploaded locally in folder project) -->
     <link type="text/css" rel="stylesheet" href="{% static 'menu_app/libs/swiper/package/css/swiper.min.css' %}">
 
@@ -36,14 +32,10 @@
     <script defer src="{% static 'menu_app/libs/popper/popper.min.js' %}"></script>
     <!-- JS Bootstrap (Uploaded locally in folder project) -->
     <script defer src="{% static 'menu_app/libs/bootstrap/js/bootstrap.min.js' %}"></script>
-    <!-- JS MMenu (Uploaded locally in folder project) -->
-    <script defer src="{% static 'menu_app/libs/mmenu/dist/mmenu.js' %}"></script>
-    <!-- JS Juggler (Uploaded locally in folder project) -->
-    <script defer src="{% static 'menu_app/libs/juggler/dist/juggler.min.js' %}"></script>
     <!-- JS Swiper (Uploaded locally in folder project) -->
     <script defer src="{% static 'menu_app/libs/swiper/package/js/swiper.min.js' %}"></script>
-    <!-- JS HC-Sticky (Uploaded locally in folder project) -->
-    <script defer src="{% static 'menu_app/libs/hc-sticky/dist/hc-sticky.js' %}"></script>
+    
+
 
     <!-- 0.4) Personal Styles and Scripts -->
     <!-- We use "defer" property on Javascripts files to load them after the entire code on the <body> tag is uploaded -->
@@ -66,133 +58,241 @@
     <!-- ================================================================================================ -->
     <!-- 1) NAVBAR -->
     <!-- ================================================================================================ -->
-          
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            
-            <!-- Cpmany Name and Logo -->
-            <a class="navbar-brand" href="#"><img src="/static/menu_app/images/Logo_567_Bakery.png" width="40" height="40" alt="567_Bakery_Logo" class="d-inline-block align-middle"> 567 Bakery</a>
-            
-            <!-- Toggler Button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- Navbar Links -->
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav nav nav-tabs ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Sobre Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Nuestros Productos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    
-    <!-- ================================================================================================ -->
-    <!-- 2) MAIN -->
-    <!-- ================================================================================================ -->
-    
-    
-    <div class="jumbotron introBackgroundStyles container-fluid">
-        <!-- <div class="overlay"></div> -->
+         
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
         
-            <h1 class="display-4">Simple Elegante Increible</h1>
-            <p class="lead">Comida fresca cocinada con los mejores ingredientes directamente a tu casa </p>
-            <p class="lead">Nuestras pizzas son hechas en el momento con masa e ingredientes frescos (sin congelar). Basta meterlas al horno y listo! </p>
+        <!-- Cpmany Name and Logo -->
+        <a class="navbar-brand" href="#"><img src="/static/menu_app/images/Logo_567_Bakery.png" width="40" height="40" alt="567_Bakery_Logo" class="d-inline-block align-middle"></a>
+        <p class="lead text-light m-0">567 Bakery</p>
         
-            <p class="lead">
-                <a class="btn btn-dark btn-lg" href="#" role="button">Learn more</a>
-            </p>
-        
-    </div>
+        <!-- Toggler Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <div class="container-fluid">
-    <div class="card-deck">
-        <!-- <div class="col-lg-4 col-md-4 col-sm-12"> -->
-            <div class="card mb-4">
-                <img class="card-img-top img-fluid" src="/static/menu_app/images/column-1.jpeg">
-                <div class="card-body text-center">
-                    <p class="card-text font-weight-bold">Nuestras pizzas son hechas en el momento con ingredientes frescos (sin congelar).</p>
-                    <a href="#" class="card-link">Another link</a>
-                </div>
-            </div>
-        <!-- </div>
-        <div class="col-lg-4 col-md-4 col-sm-12"> -->
-            <div class="card mb-4">
-                <img class="card-img-top img-fluid" src="/static/menu_app/images/column-2.jpeg">
-                <div class="card-body text-center">
-                    <p class="card-text font-weight-bold">Una perfecta opción para compartir en familia y con amigos</p>
-                    <a href="#" class="card-link">Another link</a>
-                </div>
-            </div>
-        <!-- </div>
-        <div class="col-lg-4 col-md-4 col-sm-12"> -->
-            <div class="card mb-4">
-                <img class="card-img-top img-fluid" src="/static/menu_app/images/column-3.jpeg">
-                <div class="card-body text-center">
-                    <p class="card-text font-weight-bold">Así es! nuestros ingredientes son frescos, inclusive nuestra MASAS!</p>
-                    <a href="#" class="card-link">Another link</a>
-                </div>
-            </div>
-        <!-- </div> -->
-    </div>
-
-    <div class="row mt-sm-4 mb-sm-4 mt-md-0 mb-md-0">
-        <div class="col-sm-12 col-md-8">
-            <h3>Sobre Nosotros</h3>
-            <p class="lead font-italic">567 Bakery es un emprendiemitno familiar que busca traer los sabores italianos a la mesa de su casa casa</p>
-    
-            <p>Todo partió con......Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            <p>Así nació....Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-        </div>
-    
-        <div class="col-sm-12 col-md-4">
-            <h3 class="mb-4">Secondary Menu</h3>
-    
-            <ul class="nav flex-column nav-pills">
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">Active</a>
+                    <a class="nav-link active" href="#index">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#ourSecret">Nuestro Secreto</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#products">Nuestros Productos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Disabled</a>
+                    <a class="nav-link" href="#aboutUs">Sobre Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contacto</a>
                 </li>
             </ul>
         </div>
+    </nav>
     
-    </div>
-    </div>
+    <!-- ================================================================================================ -->
+    <!-- 2) HEADER -->
+    <!-- ================================================================================================ -->
+    
+    
+    <header id="index" class="jumbotron jumbotron-fluid introBackgroundStyles ">
+        <div class="container py-5">
+            <div class="row justify-content-center text-center">
+                <div class="col-10 col-lg-8">
+                    <h1 class="display-5">Simple Elegante Increible</h1>
+                    <p class="h2">Comida fresca cocinada con los mejores ingredientes directamente a tu casa </p>
+                    <hr class="my-4 border border-light">
+                    <p class="h4">Nuestras pizzas son hechas en el momento con masa e ingredientes frescos (sin congelar). Basta meterlas al horno y listo! </p>
+                
+                    <p class="lead mt-3">
+                        <a class="btn btn-primary btn-lg" href="#" role="button">Ve nuestro Menu</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ================================================================================================ -->
+    <!-- 3) MAIN -->
+    <!-- ================================================================================================ -->
+
+    <main>
+        
+        <!-- 3.1) CARD-DECK -->
+        <section id="ourSecret">
+            <div class="container py-4">
+                <div class="card-deck">
+                    <div class="card px-4 pt-2 mb-4 bg-white">
+                        <h3 class="card-header text-center bg-white mt-2 mb-3">Ingredientes Frescos</h3>
+                        <img class="card-img-top img-fluid" src="/static/menu_app/images/column-1.jpeg">
+                        <div class="card-body text-center">
+                            <p class=" lead card-text font-weight-bold border border-light p-2">Nuestras pizzas son hechas en el momento con ingredientes frescos sin congelar!</p>
+                            <!-- <a href="#" class="card-link">Another link</a> -->
+                        </div>
+                    </div>
+            
+                    <div class="card px-4 pt-2 mb-4 ">
+                        <h3 class="card-header text-center bg-white mt-2 mb-3">Para Compartir</h3>
+                        <img class="card-img-top img-fluid" src="/static/menu_app/images/column-2.jpeg">
+                        <div class="card-body text-center">
+                            <p class="lead card-text font-weight-bold border border-light p-2">Una perfecta opción para compartir en familia y con amigos</p>
+                            <!-- <a href="#" class="card-link">Another link</a> -->
+                        </div>
+                    </div>
+                
+                    <div class="card px-4 pt-2 mb-4">
+                        <h3 class="card-header text-center bg-white mt-2 mb-3">Con nuestras manos</h3>
+                        <img class="card-img-top img-fluid" src="/static/menu_app/images/column-3.jpeg">
+                        <div class="card-body text-center">
+                            <p class="lead card-text font-weight-bold border border-light p-2">Así es! Nuestra masa es elevarada por Nosotros!</p>
+                            <!-- <a href="#" class="card-link">Another link</a> -->
+                        </div>
+                    </div>
+                
+                </div> <!-- end of card-deck class-->
+            </div> <!-- end of container class-->
+
+        </section>
+
+        <!-- 3.2) OUR MENU -->
+        <section id="products" class="bg-dark">
+            <div class="container text-light my-4 p-4">
+                <div class="row">
+                    <div class="col-12 col-lg-8">
+                        
+                        <h3 class="my-4 text-center text-lg-left">Algunos de Nuestros Favoritos</h3>
+                        
+                        <!-- Beginnig pf Swiper Slides -->
+
+                        <section id="someOfOurFavoritesSlides">
+                            
+                            <div class="swiper-container">
+                                <div class="swiper-container" id="swiperSomeOfOurFavorites">
+                                    <div class="swiper-wrapper pb-3">
+                                        
+                                        <!-- Slide 1 -->
+                                        <div class="swiper-slide px-5 pb-5">
+                                            <div class="row align-items-md-center justify-content-center">
+                                                <div class="col-12 col-md-6 order-md-1">
+                                                    {% load static %}
+                                                    <img src="{% static 'menu_app/images/pizza-1.jpg' %}" alt="Product 1"
+                                                class="img-fluid img-thumbnail">
+                                                </div>
+                                                <div class="col-12 col-md-5 order-md-0 mt-4">
+                                                    <h4 class="font-weight-bold font-italic">"On Nico"</h4>
+                                                    <p class="lead pr-md-3">Mozarella, tomates cherry frillados y albahaca</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Slide 2 -->
+                                        <div class="swiper-slide px-5 pb-5">
+                                            <div class="row align-items-md-center justify-content-center">
+                                                <div class="col-12 col-md-6 order-md-1">
+                                                    {% load static %}
+                                                    <img src="{% static 'menu_app/images/pizza-2.jpg' %}" alt="Product 1"
+                                                class="img-fluid img-thumbnail">
+                                                </div>
+                                                <div class="col-12 col-md-5 order-md-0 mt-4">
+                                                    <h3 class="font-weight-bold">"Felices los 7"</h3>
+                                                    <p class="lead pr-md-3">Mozarella, rúcula, queso azul y pera grillada</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Slide 3 -->
+                                        <div class="swiper-slide px-5 pb-5">
+                                            <div class="row align-items-md-center justify-content-center">
+                                                <div class="col-12 col-md-6 order-md-1">
+                                                    {% load static %}
+                                                    <img src="{% static 'menu_app/images/pizza-3.jpg' %}" alt="Product 1"
+                                                class="img-fluid img-thumbnail">
+                                                </div>
+                                                <div class="col-12 col-md-5 order-md-0 mt-4">
+                                                    <h3 class="font-weight-bold">"Windy City"</h3>
+                                                    <p class="lead pr-md-3">Mozarella, ricota, rúcula y nueces acarameladas</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div> <!-- end of .swiper-wrapper -->
+
+                                    <!-- Swiper components -->
+                                    <div class="swiper-pagination"></div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+
+                                </div>
+                            </div> <!-- end of .swiper-container -->
+                        
+                        </section>
+
+                    </div>
+                
+                    <div class="col-12 col-lg-4">
+                        <h3 class="my-3 text-center text-lg-left"> Nuestros Productos</h3>
+                
+                        <ul class="nav nav-pills flex-column px-5 pr-lg-5 pl-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="pill" href="#">Nuestras Pizzas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="pill" href="#">Nuestra Pastelería</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="pill" href="#">Nuestras Cervezas</a>
+                            </li>
+                        </ul>
+                    </div> 
+
+                </div> <!-- end of row class-->
+            </div> <!-- end of container class-->
+
+        </section>
+
+        <!-- 3.3) ABOUT US -->
+        <section id="aboutUs">
+            <div class="container my-4 p-4">
+                <div class="row">
+                    <div class="col-sm-12 col-md-8">
+                        <h3>Sobre Nosotros</h3>
+                        <p class="lead font-italic">567 Bakery es un emprendiemitno familiar que busca traer los mejores sabores italianos a la mesa de su casa</p>
+                
+                        <p>Todo partió con......Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        <p>Así nació....Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    </div>
+
+                </div> <!-- end of row class-->
+            </div> <!-- end of container class-->
+        </section>
+
+    </main>
 
 
     <!-- ================================================================================================ -->
     <!-- 3) FOOTER -->
     <!-- ================================================================================================ -->
 
-    <footer class=" text-light bg-dark">
+    <footer id="contact" class=" text-light bg-dark">
 		<div class="container py-4">
 	  		<div class="row">
-	  			<div class="col-lg-4 col-md-4 col-sm-12">
+	  			<div class="col-sm-12 col-md-6 ">
 					<h6 class="text-uppercase font-weight-bold">Contacto</h6>
-					<ul>
-                        <li> Whatsapp: Bernardita Errazuriz/Nicolas Cruzat</li>
-                        <li> Instagram: https://www.instagram.com/567_bakery</li>
-                        <li> Email: 567bakery@gmail.com </li>
+					<ul class="list-unstyled">
+                        <li> 
+                            <i class="fab fa-whatsapp"></i> 
+                            Whatsapp: <a class="text-light" href="https://wa.me/56945707247"> <u>+56945707247</u> </a>Bernardita Errazuriz/Nicolas Cruzat
+                        </li>
+                        <li> <i class="fab fa-instagram"></i> 
+                            Instagram: <a class="text-light" href="https://www.instagram.com/567_bakery"> <u>https://www.instagram.com/567_bakery</u></a>    
+                        </li>
+                        <li> <i class="fas fa-envelope"></i>
+                            Email: <a class="text-light" href="mailto:567bakery@gmail.com"> <u>567bakery@gmail.com</u></a></li>
                     </ul>
                 </div>
-                <div class="col-lg-8 col-md-8 col-sm-12">
+                <div class="col-sm-12 col-md-6">
 					<h6 class="text-uppercase font-weight-bold">Delivery</h6>
 					<p>Costo de Envio: $2.500, Lo Barnechea, Las Condes y Vitacura</p>
 	  			</div>  

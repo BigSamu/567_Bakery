@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ================================================================================================ -->
+    <!-- 0) LOAD METAS, EXTERNAL LIBRARIES AND PERSONAL STYLES & SCRIPTS -->
+    <!-- ================================================================================================ -->
+    
+    <!-- 0.1) Meta Tags and Title -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>567 Bakery</title>
+
+    {% load static %}
+    <!-- 0.2) External Libraries for Styles-->
+
+    <!-- CSS Bootstrap 4 (Uploaded locally in folder project)-->
+    <link type="text/css" rel="stylesheet" href="{% static 'menu_app/libs/bootstrap/css/bootstrap.css' %}">
+    <!-- CSS Google Fonts (Uploaded by CDN with weblink) -->
+    <link type="text/css" rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Pangolin:300,400,700&display=swap">
+    <!-- CSS Font Awesome (Uploaded locally in folder project) -->
+    <link type="text/css" rel="stylesheet" href="{% static 'menu_app/libs/fontawesome/css/all.min.css' %}">
+    <!-- CSS MMenu (Uploaded locally in folder project) -->
+    <link type="text/css" rel="stylesheet" href="{% static 'menu_app/libs/mmenu/dist/mmenu.css' %}">
+    <!-- CSS Mburger (Uploaded locally in folder project) -->
+    <link type="text/css" rel="stylesheet" href="{% static 'menu_app/libs/mburger/dist/mburger.css' %}">
+    <!-- CSS Swiper (Uploaded locally in folder project) -->
+    <link type="text/css" rel="stylesheet" href="{% static 'menu_app/libs/swiper/package/css/swiper.min.css' %}">
+
+    <!-- 0.3) External Libraries for Scripts -->
+    <!-- We use "defer" property on Javascripts files to load them after the entire code on the <body> tag is uploaded -->
+
+    <!-- JS JQuery (Uploaded locally in folder project) -->
+    <script defer src="{% static 'menu_app/libs/jquery/jquery-3.5.1.min.js' %}"></script>
+    <!-- JS Popper (Uploaded locally in folder project) -->
+    <script defer src="{% static 'menu_app/libs/popper/popper.min.js' %}"></script>
+    <!-- JS Bootstrap (Uploaded locally in folder project) -->
+    <script defer src="{% static 'menu_app/libs/bootstrap/js/bootstrap.min.js' %}"></script>
+    <!-- JS MMenu (Uploaded locally in folder project) -->
+    <script defer src="{% static 'menu_app/libs/mmenu/dist/mmenu.js' %}"></script>
+    <!-- JS Juggler (Uploaded locally in folder project) -->
+    <script defer src="{% static 'menu_app/libs/juggler/dist/juggler.min.js' %}"></script>
+    <!-- JS Swiper (Uploaded locally in folder project) -->
+    <script defer src="{% static 'menu_app/libs/swiper/package/js/swiper.min.js' %}"></script>
+    <!-- JS HC-Sticky (Uploaded locally in folder project) -->
+    <script defer src="{% static 'menu_app/libs/hc-sticky/dist/hc-sticky.js' %}"></script>
+
+    <!-- 0.4) Personal Styles and Scripts -->
+    <!-- We use "defer" property on Javascripts files to load them after the entire code on the <body> tag is uploaded -->
+
+    <link rel="stylesheet" href="{% static 'menu_app/css/style.css' %}">
+    <script defer src="{% static 'menu_app/js/script.js' %}"></script>  
+
+    <!-- ================================================================================================ -->
+
+</head>
+<body>
+
+    <!-- ================================================================================================ -->
+    <!-- Considerations: -->
+    <!-- 1) The following classes used in this project are classes entirely built-in classes from Bootstrap. The Personal styles on the styles.css file only overwrite built-in Bootstrap classes or main HTML elements -->
+    <!-- 2) The  <nav>, <section>, <article> and <footer> tag are only semantic tags really similar to the <div> tag. The purpose of them is only to avoid the overuse of <div> tags and make the code more readable and neater -->
+    <!-- 3) This project only use Front-End technologies (HTML, CSS, JS, JQuery, Bootstrap). No Back-End development (such as Python or Django) is used here -->
+    <!-- ================================================================================================ -->
+    
+    <!-- ================================================================================================ -->
+    <!-- 1) NAVBAR -->
+    <!-- ================================================================================================ -->
+         
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        
+        <!-- Cpmany Name and Logo -->
+        <a class="navbar-brand" href="#"><img src="/static/menu_app/images/Logo_567_Bakery.png" width="40" height="40" alt="567_Bakery_Logo" class="d-inline-block align-middle"></a>
+        <p class="lead text-light m-0">567 Bakery</p>
+        
+        <!-- Toggler Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sobre Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Nuestros Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- ================================================================================================ -->
+    <!-- 2) HEADER -->
+    <!-- ================================================================================================ -->
+    
+    
+    <header class="jumbotron jumbotron-fluid introBackgroundStyles ">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-10 col-lg-8">
+                    <h1 class="display-5">Simple Elegante Increible</h1>
+                    <p class="h2">Comida fresca cocinada con los mejores ingredientes directamente a tu casa </p>
+                    <hr class="my-4 border border-light">
+                    <p class="h4">Nuestras pizzas son hechas en el momento con masa e ingredientes frescos (sin congelar). Basta meterlas al horno y listo! </p>
+                
+                    <p class="lead mt-3">
+                        <a class="btn btn-dark btn-lg" href="#" role="button">Ve nuestro Menu</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ================================================================================================ -->
+    <!-- 3) MAIN -->
+    <!-- ================================================================================================ -->
+
+    <main>
+        
+        <!-- 3.1) CARD-DECK -->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="card col-lg-4 px-4 pt-2 mb-4">
+                        <h3 class="card-header text-center bg-white mt-2 mb-3">On Nico</h3>
+                        <img class="card-img-top img-fluid" src="/static/menu_app/images/column-1.jpeg">
+                        <div class="card-body text-center">
+                            <div class="row">
+                                <p class="col-9 lead card-text font-weight-bold border border-light p-2">Mozarella, tomates cherry grillados y albahaca</p>
+                                <p class="col-3 lead card-text font-weight-bold border border-light p-2">$6.900</p>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="card col-lg-4 px-4 pt-2 mb-4">
+                        <h3 class="card-header text-center bg-white mt-2 mb-3">Felices Los 7</h3>
+                        <img class="card-img-top img-fluid" src="/static/menu_app/images/column-2.jpeg">
+                        <div class="card-body text-center">
+                            <div class="row">
+                                <p class="col-9 lead card-text font-weight-bold border border-light p-2">Mozarella, rucula, queso azul y pera grillada</p>
+                                <p class="col-3 lead card-text font-weight-bold border border-light p-2">$8.500</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="card col-lg-4 px-4 pt-2 mb-4">
+                        <h3 class="card-header text-center bg-white mt-2 mb-3">Windy City</h3>
+                        <img class="card-img-top img-fluid" src="/static/menu_app/images/column-3.jpeg">
+                        <div class="card-body text-center">
+                            <div class="row">
+                                <p class="col-9 lead card-text font-weight-bold border border-light p-2">Mozarella, ricota, rucula y nueces acarameladas</p>
+                                <p class="col-3 lead card-text font-weight-bold border border-light p-2">$7.900</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="card col-lg-4 px-4 pt-2 mb-4">
+                        <h3 class="card-header text-center bg-white mt-2 mb-3">El Capitan</h3>
+                        <img class="card-img-top img-fluid" src="/static/menu_app/images/column-1.jpeg">
+                        <div class="card-body text-center">
+                            <div class="row">
+                                <p class="col-9 lead card-text font-weight-bold border border-light p-2">Mozarella y albahaca</p>
+                                <p class="col-3 lead card-text font-weight-bold border border-light p-2">$6.500</p>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="card col-lg-4 px-4 pt-2 mb-4">
+                        <h3 class="card-header text-center bg-white mt-2 mb-3">Daisy</h3>
+                        <img class="card-img-top img-fluid" src="/static/menu_app/images/column-2.jpeg">
+                        <div class="card-body text-center">
+                            <div class="row">
+                                <p class="col-9 lead card-text font-weight-bold border border-light p-2">Mozarella, tomate cherry, mozarella Fior di Latte y rucula</p>
+                                <p class="col-3 lead card-text font-weight-bold border border-light p-2">$8.500</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="card col-lg-4 px-4 pt-2 mb-4">
+                        <h3 class="card-header text-center bg-white mt-2 mb-3">Go Big</h3>
+                        <img class="card-img-top img-fluid" src="/static/menu_app/images/column-3.jpeg">
+                        <div class="card-body text-center">
+                            <div class="row">
+                                <p class="col-9 lead card-text font-weight-bold border border-light p-2">Mozarella, huevo y pancetta</p>
+                                <p class="col-3 lead card-text font-weight-bold border border-light p-2">$8.900</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="card col-lg-4 px-4 pt-2 mb-4">
+                        <h3 class="card-header text-center bg-white mt-2 mb-3">Los 13</h3>
+                        <img class="card-img-top img-fluid" src="/static/menu_app/images/column-1.jpeg">
+                        <div class="card-body text-center">
+                            <div class="row">
+                                <p class="col-9 lead card-text font-weight-bold border border-light p-2">Mozarella, tomate cherry, mechada, palta</p>
+                                <p class="col-3 lead card-text font-weight-bold border border-light p-2">$8.500</p>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="card col-lg-4 px-4 pt-2 mb-4">
+                        <h3 class="card-header text-center bg-white mt-2 mb-3">567</h3>
+                        <img class="card-img-top img-fluid" src="/static/menu_app/images/column-2.jpeg">
+                        <div class="card-body text-center">
+                            <div class="row">
+                                <p class="col-9 lead card-text font-weight-bold border border-light p-2">Mozarella, rucula, prosciutto y parmesano</p>
+                                <p class="col-3 lead card-text font-weight-bold border border-light p-2">$8.500</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="card col-lg-4 px-4 pt-2 mb-4">
+                        <h3 class="card-header text-center bg-white mt-2 mb-3">Ruben</h3>
+                        <img class="card-img-top img-fluid" src="/static/menu_app/images/column-3.jpeg">
+                        <div class="card-body text-center">
+                            <div class="row">
+                                <p class="col-9 lead card-text font-weight-bold border border-light p-2">Mozarella y pepperoni</p>
+                                <p class="col-3 lead card-text font-weight-bold border border-light p-2">$6.900</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="card col-lg-4 px-4 pt-2 mb-4">
+                        <h3 class="card-header text-center bg-white mt-2 mb-3">The Queen</h3>
+                        <img class="card-img-top img-fluid" src="/static/menu_app/images/column-1.jpeg">
+                        <div class="card-body text-center">
+                            <div class="row">
+                                <p class="col-9 lead card-text font-weight-bold border border-light p-2">Mozarella, prosciutto, queso azul y pimenton acaramelado</p>
+                                <p class="col-3 lead card-text font-weight-bold border border-light p-2">$7.900</p>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="card col-lg-4 px-4 pt-2 mb-4">
+                        <h3 class="card-header text-center bg-white mt-2 mb-3">Oh My Barbecue</h3>
+                        <img class="card-img-top img-fluid" src="/static/menu_app/images/column-2.jpeg">
+                        <div class="card-body text-center">
+                            <div class="row">
+                                <p class="col-9 lead card-text font-weight-bold border border-light p-2">Mozarella, salsa Barbecue, pollo y tacino</p>
+                                <p class="col-3 lead card-text font-weight-bold border border-light p-2">$8.500</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- end of container class-->
+
+        </section>
+
+        <!-- 3.3) OUR MENU -->
+        <section class="bg-dark text-light my-4 p-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-8">
+                        <h3>Algunos de Nuestros Favoritos</h3>
+                        <p class="lead font-italic">567 Bakery es un emprendiemitno familiar que busca traer los sabores italianos a la mesa de su casa casa</p>
+                
+                        <p>Todo partió con......Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        <p>Así nació....Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    </div>
+                
+                    <div class="col-sm-12 col-md-4">
+                        <h3 class="mb-4"> Nuestros Productos</h3>
+                
+                        <ul class="nav flex-column nav-pills">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Nuestras Pizzas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Nuestra Pastelería</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Nuestras Cervezas</a>
+                            </li>
+                        </ul>
+                    </div> 
+
+                </div> <!-- end of row class-->
+            </div> <!-- end of container class-->
+
+        </section>
+
+        <section>
+            <div class="container my-4 p-4">
+                <div class="row">
+                    <div class="col-sm-12 col-md-8">
+                        <h3>Sobre Nosotros</h3>
+                        <p class="lead font-italic">567 Bakery es un emprendiemitno familiar que busca traer los sabores italianos a la mesa de su casa casa</p>
+                
+                        <p>Todo partió con......Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        <p>Así nació....Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    </div>
+
+                </div> <!-- end of row class-->
+            </div> <!-- end of container class-->
+        </section>
+
+    </main>
+
+
+    <!-- ================================================================================================ -->
+    <!-- 3) FOOTER -->
+    <!-- ================================================================================================ -->
+
+    <footer class=" text-light bg-dark">
+		<div class="container py-4">
+	  		<div class="row">
+	  			<div class="col-sm-12 col-md-6 ">
+					<h6 class="text-uppercase font-weight-bold">Contacto</h6>
+					<ul class="list-unstyled">
+                        <li> Whatsapp: Bernardita Errazuriz/Nicolas Cruzat</li>
+                        <li> Instagram: https://www.instagram.com/567_bakery</li>
+                        <li> Email: 567bakery@gmail.com </li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-6">
+					<h6 class="text-uppercase font-weight-bold">Delivery</h6>
+					<p>Costo de Envio: $2.500, Lo Barnechea, Las Condes y Vitacura</p>
+	  			</div>  
+			</div>
+			<div class="footer-copyright text-center">© 2020 Copyright: 567 Bakery</div>
+  	</footer>
+    
+    
+</body>
+</html>
