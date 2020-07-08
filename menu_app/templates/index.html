@@ -19,7 +19,6 @@
     <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pangolin:300,400,700&display=swap">
     <!-- CSS Font Awesome (Uploaded locally in folder project) -->
     <link type="text/css" rel="stylesheet" href="{% static 'menu_app/libs/fontawesome/css/all.min.css' %}">
-    
     <!-- CSS Swiper (Uploaded locally in folder project) -->
     <link type="text/css" rel="stylesheet" href="{% static 'menu_app/libs/swiper/package/css/swiper.min.css' %}">
 
@@ -79,8 +78,15 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#ourSecret">Nuestro Secreto</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#products">Nuestros Productos</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Nuestros Productos</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#ourFavorites">Nuestros Favoritos</a>
+                        <div class="dropdown-divider mx-3"></div>
+                        <a class="dropdown-item" href="/products/#pizza">Nuestras Pizzas</a>
+                        <a class="dropdown-item" href="/products/#aperitivo">Nuestras Pasteleria</a>
+                        <a class="dropdown-item" href="/products/#cerveza">Nuestras Cervezas</a>  
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#aboutUs">Sobre Nosotros</a>
@@ -107,7 +113,7 @@
                     <p class="h4">Nuestras pizzas son hechas en el momento con masa e ingredientes frescos (sin congelar). Basta meterlas al horno y listo! </p>
                 
                     <p class="lead mt-3">
-                        <a class="btn btn-primary btn-lg" href="#" role="button">Ve nuestro Menu</a>
+                        <a class="btn btn-primary btn-lg" href="/products" role="button">Ve nuestro Menu</a>
                     </p>
                 </div>
             </div>
@@ -157,7 +163,7 @@
         </section>
 
         <!-- 3.2) OUR MENU -->
-        <section id="products" class="bg-dark">
+        <section id="ourFavorites" class="bg-dark">
             <div class="container text-light my-4 p-4">
                 <div class="row">
                     <div class="col-12 col-lg-8">

@@ -265,8 +265,21 @@ body {
 
 
 //---------------------------------------
-// 8. STYLES FOR FOOTER
+// 11. STYLES FOR FOOTER
 //---------------------------------------
+
+footer {
+  i {
+    font-size: 1.5rem;
+    margin: 0 0.3rem;
+  }
+}
+
+//---------------------------------------
+// 12. STYLES FOR PRODUCTS LIST
+//---------------------------------------
+
+
 
 //Complete!!
 
@@ -363,4 +376,16 @@ body {
   }
 
   
+}
+
+.card {
+  transition: transform .2s;
+}
+
+.card:hover {
+  transform: scale(1.05); 
+}
+
+#jumbo {
+  background-image: url(../images/bg_4.jpg);
 }

@@ -28,14 +28,19 @@ $(document).ready(function(){
             event.preventDefault();
 
             // Store hash id of anchor link
-            var target = this.hash;
+            var hash = this.hash;
             
 
             // Define scrollOffset depending on context of webpage (xs, sm, md, lg or xl)
             var scrollOffset = -65 // Default value for large contexts and over
             
             if (contextwidth < 992){
-                scrollOffset = -230
+                if ($(this).is('[href$="#ourFavorites"]')){
+                    scrollOffset = -360
+                }
+                else {
+                    scrollOffset = -230
+                }
             }
             else{
                 scrollOffset = -80
@@ -45,14 +50,14 @@ $(document).ready(function(){
             // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
             // - 70 is the offset/top margin
             $('html, body').animate({
-                'scrollTop': $(target).offset().top + scrollOffset
+                'scrollTop': $(hash).offset().top + scrollOffset
             }, 800, 'swing',function() {
                 // Add hash (#) to URL when done scrolling (default click behavior), without jumping to hash
                 if (history.pushState) {
-                    history.pushState(null, null, target); 
+                    history.pushState(null, null, hash); 
                 } 
                 else {
-                    window.location.hash = target;
+                    window.location.hash = hash;
                 }
                 return false; 
             });
